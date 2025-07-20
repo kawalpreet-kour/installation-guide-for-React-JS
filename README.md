@@ -71,43 +71,34 @@ sudo apt-get update -y && sudo apt-get upgrade -y
 
 ---
 
-### Step 2: Install Node.js (Required by React)
+### Step 2: Install Required Dependencies
+```bash
+sudo apt install curl apt-transport-https gnupg2 software-properties-common -y
+```
+These tools help in securely fetching and managing external repositories.
 
-ReactJS requires Node.js and npm to work. We'll install Node.js v18.
-
-#### ➤ 2.1 Download Node.js Setup Script
+#### ➤ 3: Add Node.js Repository
 
 ```bash
-curl -sL https://deb.nodesource.com/setup_18.x -o nodesource_setup.sh
+curl -fsSL https://deb.nodesource.com/setup_20.x | sudo bash -
 ```
-
- *Explanation*: Downloads the Node.js installation script for version 18.
-
 📸 _[Insert screenshot]_
 
-#### ➤ 2.2 Run the Setup Script
-
-```bash
-sudo bash nodesource_setup.sh
-```
-
- *Explanation*: Adds the Node.js package source to your system.
-
-📸 _[Insert screenshot]_
-
-#### ➤ 2.3 Install Node.js
+#### ➤ 4: Install Node.js & npm
 
 ```bash
 sudo apt-get install -y nodejs
 ```
+📸 _[Insert screenshot]_
 
- *Explanation*: Installs Node.js and npm (Node Package Manager).
+#### ➤ 5: Upgrade npm (Optional but Recommended)
 
+```bash
+sudo npm install -g npm@latest
+```
 📸 _[Insert screenshot after installation]_
 
 ---
-
-### Step 3: Verify Node.js and npm Installation
 
 #### ➤ Check Node.js version
 
@@ -130,61 +121,46 @@ npm -v
 📸 _[Insert screenshot showing version output]_
 
 ---
-
-### Step 4: (Optional) Update npm
-
-```bash
-sudo npm install -g npm@latest
-```
-
- *Explanation*: Updates npm to the latest version.
-
-📸 _[Insert screenshot after update]_
-
----
-
-### Step 5: Install React CLI Globally
-
-```bash
-sudo npm install -g create-react-app
-```
-
- *Explanation*: Installs the React command-line interface globally.
-
-📸 _[Insert screenshot after installation]_
-
-#### ➤ Check CLI Version
-
-```bash
-create-react-app --version
-```
-
- *Explanation*: Verifies that the React CLI is installed.
-
-📸 _[Insert screenshot showing version]_
-
----
-
 ### Step 6: Create a React Application
+Once Node.js and npm are installed, you're ready to create your first React project. The recommended tool for this is Vite, which provides a fast and optimized setup. create-react-app is now officially deprecated (as of 2024).
+
+Using Vite (Recommended)
+Vite is a modern build tool that offers lightning-fast startup, minimal configuration, and a better development experience.
 
 ```bash
-npx create-react-app my-react-app
+npm create vite@latest my-app -- --template react
 ```
 
- *Explanation*: Creates a new React application in a folder named `my-react-app`.
+ *Explanation*: Creates a new React project using Vite’s fast bundler..
 
 📸 _[Insert screenshot of app creation process]_
 
 ---
-
-### Step 7: Run the React Application
-
+### 7. Move into project directory
 ```bash
-cd my-react-app
-npm start
+cd my-app
 ```
 
- *Explanation*: Starts the development server. App will run on [http://localhost:3000](http://localhost:3000).
+---
+
+### 8. Install dependencies
+```bash
+sudo npm install
+```
+
+---
+
+### 9. Run the React app (with network support)
+```bash
+sudo npm run dev -- --host
+```
+📖 *Starts Vite development server on default port (usually 5173).*
+
+💡 *Check output URL like:*  
+`➜  Network:  http://<your-ip>:5173/`
+
+```
+*Explanation*: Starts the development server. App will run on [http://localhost:3000](http://localhost:3000).
 
 📸 _[Insert screenshot of browser showing running React app]_
 
