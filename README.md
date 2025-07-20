@@ -1,4 +1,4 @@
-# ReactJS Installation Guide on Linux (Debian/Ubuntu)
+# ReactJS Installation Guide on Linux 
 
 A comprehensive, step-by-step guide for installing ReactJS on Debian/Ubuntu-based Linux systems.
 
@@ -67,6 +67,8 @@ sudo apt update && sudo apt upgrade -y
 ```
 _Updates the package list and upgrades outdated software._
 
+<img width="813" height="584" alt="Screenshot from 2025-07-20 16-33-58" src="https://github.com/user-attachments/assets/fe3f8d8b-ea13-4393-94ce-280963ce78e6" />
+
 ---
 
 ### Step 2: Install Required Dependencies
@@ -75,6 +77,8 @@ _Updates the package list and upgrades outdated software._
 sudo apt install curl apt-transport-https gnupg2 software-properties-common -y
 ```
 _These tools help in securely fetching and managing external repositories._
+
+<img width="1057" height="481" alt="Screenshot from 2025-07-20 16-35-08" src="https://github.com/user-attachments/assets/507ca4e0-d983-4281-aace-3d0d2d05e9fb" />
 
 ---
 
@@ -85,6 +89,8 @@ curl -fsSL https://deb.nodesource.com/setup_23.x -o nodesource_setup.sh
 ```
 _Downloads NodeSource setup script for Node.js 23.x_
 
+<img width="812" height="80" alt="Screenshot from 2025-07-20 22-50-38" src="https://github.com/user-attachments/assets/9b464ace-7756-4210-b7bc-38efc9300fe4" />
+
 ---
 
 ### Step 4: Run the Setup Script
@@ -92,6 +98,7 @@ _Downloads NodeSource setup script for Node.js 23.x_
 ```bash
 sudo bash nodesource_setup.sh
 ```
+<img width="746" height="653" alt="Screenshot from 2025-07-20 22-53-26" src="https://github.com/user-attachments/assets/20a74d47-1f47-4365-b455-275e03186c70" />
 
 ---
 
@@ -100,14 +107,23 @@ sudo bash nodesource_setup.sh
 ```bash
 sudo apt-get install -y nodejs
 ```
+<img width="858" height="391" alt="Screenshot from 2025-07-20 23-00-03" src="https://github.com/user-attachments/assets/92387b38-898d-455a-a9d7-37057a8ce1c1" />
 
 ---
 
 ### Step 6: Verify Installations
 
 ```bash
-node -v && npm -v
+node -v 
 ```
+<img width="495" height="67" alt="Screenshot from 2025-07-20 23-00-53" src="https://github.com/user-attachments/assets/d3c812d8-0c93-4832-a5a1-9baf4ae86936" />
+
+```bash
+
+npm -v
+```
+<img width="495" height="67" alt="Screenshot from 2025-07-20 23-06-06" src="https://github.com/user-attachments/assets/1a087526-a18a-4f41-86b3-65234b98f00a" />
+
 _Should output the installed versions._
 
 ---
@@ -117,6 +133,8 @@ _Should output the installed versions._
 ```bash
 sudo npm install -g npm@latest
 ```
+
+<img width="681" height="94" alt="Screenshot from 2025-07-21 00-36-12" src="https://github.com/user-attachments/assets/7d4c59cd-f18a-457e-b45d-bbfe89dc59a0" />
 
 ---
 
@@ -131,6 +149,7 @@ sudo npm install -g npm@latest
 ```bash
 npm create vite@latest
 ```
+<img width="661" height="589" alt="Screenshot from 2025-07-20 23-19-11" src="https://github.com/user-attachments/assets/6bbe65ff-92e6-43e7-8702-e14ac23becd4" />
 
 You'll be prompted:
 
@@ -147,7 +166,7 @@ Where `my-app` is your desired project name.
 | Command                          | Description                                  |
 |-----------------------------------|----------------------------------------------|
 | `npm create vite@latest`          | Runs the latest Vite setup tool              |
-| `my-app`                         | Name of your project directory               |
+|  `<project name>` `eg. my-app`                         | Name of your project directory               |
 | `-- --template react`             | Tells Vite to use the React JavaScript template |
 
 ---
@@ -157,6 +176,8 @@ Where `my-app` is your desired project name.
 ```bash
 cd <project name>
 ```
+<img width="672" height="30" alt="Screenshot from 2025-07-21 00-41-35" src="https://github.com/user-attachments/assets/a7e3a3f5-3e7b-4a7f-ad66-fa89c941e7db" />
+
 Replace `<project name>` with the name you chose (e.g., `Demo-reactjs`).
 
 ---
@@ -166,21 +187,25 @@ Replace `<project name>` with the name you chose (e.g., `Demo-reactjs`).
 ```bash
 npm install
 ```
+<img width="626" height="146" alt="Screenshot from 2025-07-21 00-41-46" src="https://github.com/user-attachments/assets/4d0f1147-674e-4d35-aff0-b5de62452841" />
 
 ---
 
 ### Run Development Server (Expose to Network)
 
 ```bash
-npm run dev -- --host
+npm run dev 
 ```
+<img width="624" height="207" alt="Screenshot from 2025-07-21 00-41-58" src="https://github.com/user-attachments/assets/4019e1b7-c872-4cd7-b5d4-1206f240e788" />
 
 You should see output like:
 ```
 ➜  Local:   http://localhost:5173/
-➜  Network: http://<your-ip>:5173/
+➜  Network: http://<your-ip>:5173/ > (in case you're installing on EC2)
 ```
 Open the Network URL in your browser.
+
+<img width="1296" height="600" alt="Screenshot from 2025-07-20 23-21-39" src="https://github.com/user-attachments/assets/e028781f-d3f1-453c-96ba-e30c45878b01" />
 
 ---
 
