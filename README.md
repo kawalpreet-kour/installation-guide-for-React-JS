@@ -43,7 +43,7 @@ Set up ReactJS on a local Ubuntu machine using **Vite**, a modern and faster alt
 
 ## Introduction
 
-ReactJS is a JavaScript library for building interactive user interfaces. It is maintained by Meta and a community of developers. This guide will walk you through the ReactJS setup on Ubuntu 22.04 using Vite.
+ReactJS is a JavaScript library for building interactive user interfaces. It is maintained by Meta and a community of developers. This guide will walk you through the ReactJS setup on Linux using Vite.
 
 ---
 
