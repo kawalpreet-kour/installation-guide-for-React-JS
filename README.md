@@ -4,9 +4,11 @@ A comprehensive, step-by-step guide for installing ReactJS on Debian/Ubuntu-base
 
 ---
 
-| Authors           | Created on    | Version | Last updated by | Last edited on |
-|-------------------|--------------|---------|-----------------|---------------|
-| Kawalpreet Kour   | 19 July 2025 | v1      | -               | -             |
+## Author Information
+
+| Created by      | Created on  | Version | Last updated ON | pre Reviewer |  .
+|-----------------|------------|---------|-----------------|-------------- |
+| Kawalpreet Kour | 18-07-2025 | V 1.0   | 19-07-2025      | Pritam        | 
 
 ---
 
