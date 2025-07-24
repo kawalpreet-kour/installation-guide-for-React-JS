@@ -2,54 +2,55 @@
 
 A comprehensive, step-by-step guide for installing ReactJS on Debian/Ubuntu-based Linux systems.
 
----
-
+<img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="ReactJS Logo" width="60"/>
 
 ## Author Information
 
 | Created by      | Created on  | Version | Last updated ON | pre Reviewer | 
 |-----------------|------------|---------|-----------------|--------------| 
-| Kawalpreet Kour | 18-07-2025 | V 1.0   | 19-07-2025      | Pritam       | 
+| Kawalpreet Kour | 19-07-2025 | V 1.0   | 20-07-2025      | Pritam       | 
 
 ---
+
 ## Table of Contents
 
-- [Objective](#objective)
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Step-by-Step Installation Guide](#step-by-step-installation-guide)
-  - [Step 1: Update Your Packages](#step-1-update-your-packages)
-  - [Step 2: Install Required Dependencies](#step-2-install-required-dependencies)
-  - [Step 3: Add Node.js Repository](#step-3-add-nodejs-repository)
-  - [Step 4: Run the Setup Script](#step-4-run-the-setup-script)
-  - [Step 5: Install Node.js & npm](#step-5-install-nodejs--npm)
-  - [Step 6: Verify Installations](#step-6-verify-installations)
-  - [Step 7: Upgrade npm](#step-7-upgrade-npm)
-  - [Step 8: React Setup Using Vite](#step-8-react-setup-using-vite)
-    - [Create a New Vite Project](#create-a-new-vite-project)
-    - [Navigate to Project Directory](#navigate-to-project-directory)
-    - [Install Project Dependencies](#install-project-dependencies)
-    - [Run Development Server](#run-development-server)
-- [Troubleshooting](#troubleshooting)
-- [Notes](#notes)
-- [Contact](#contact)
-- [References](#references)
+1. [Objective](#1-objective)
+2. [Introduction](#2-introduction)
+3. [Prerequisites](#3-prerequisites)
+4. [Step-by-Step Installation Guide](#4-step-by-step-installation-guide)
+    - [4.1 Update Your Packages](#41-update-your-packages)
+    - [4.2 Install Required Dependencies](#42-install-required-dependencies)
+    - [4.3 Add Node.js Repository](#43-add-nodejs-repository)
+    - [4.4 Run the Setup Script](#44-run-the-setup-script)
+    - [4.5 Install Node.js & npm](#45-install-nodejs--npm)
+    - [4.6 Verify Installations](#46-verify-installations)
+    - [4.7 Upgrade npm](#47-upgrade-npm)
+    - [4.8 React Setup Using Vite](#48-react-setup-using-vite)
+        - [4.8.1 Create a New Vite Project](#481-create-a-new-vite-project)
+        - [4.8.2 Navigate to Project Directory](#482-navigate-to-project-directory)
+        - [4.8.3 Install Project Dependencies](#483-install-project-dependencies)
+        - [4.8.4 Run Development Server](#484-run-development-server)
+5. [Troubleshooting](#5-troubleshooting)
+6. [Notes](#6-notes)
+7. [FAQs](#7-faqs)
+8. [Contact](#8-contact)
+9. [References](#9-references)
 
 ---
 
-## Objective
+## 1. Objective
 
-Set up ReactJS on a local Ubuntu machine using **Vite**, a modern and faster alternative to `create-react-app`.
+To guide users in installing and running ReactJS on their Ubuntu system for development purposes.
 
 ---
 
-## Introduction
+## 2. Introduction
 
 ReactJS is a JavaScript library for building interactive user interfaces. It is maintained by Meta and a community of developers. This guide will walk you through the ReactJS setup on Linux using Vite.
 
 ---
 
-## Prerequisites
+## 3. Prerequisites
 
 | Requirement         | Description                                  |
 |---------------------|----------------------------------------------|
@@ -60,9 +61,9 @@ ReactJS is a JavaScript library for building interactive user interfaces. It is 
 
 ---
 
-## Step-by-Step Installation Guide
+## 4. Step-by-Step Installation Guide
 
-### Step 1: Update Your Packages
+### 4.1 Update Your Packages
 
 ```bash
 sudo apt update && sudo apt upgrade -y
@@ -73,7 +74,7 @@ _Updates the package list and upgrades outdated software._
 
 ---
 
-### Step 2: Install Required Dependencies
+### 4.2 Install Required Dependencies
 
 ```bash
 sudo apt install curl apt-transport-https gnupg2 software-properties-common -y
@@ -84,7 +85,7 @@ _These tools help in securely fetching and managing external repositories._
 
 ---
 
-### Step 3: Add Node.js Repository
+### 4.3 Add Node.js Repository
 
 ```bash
 curl -fsSL https://deb.nodesource.com/setup_23.x -o nodesource_setup.sh
@@ -95,7 +96,7 @@ _Downloads NodeSource setup script for Node.js 23.x_
 
 ---
 
-### Step 4: Run the Setup Script
+### 4.4 Run the Setup Script
 
 ```bash
 sudo bash nodesource_setup.sh
@@ -104,7 +105,7 @@ sudo bash nodesource_setup.sh
 
 ---
 
-### Step 5: Install Node.js & npm
+### 4.5 Install Node.js & npm
 
 ```bash
 sudo apt-get install -y nodejs
@@ -113,7 +114,7 @@ sudo apt-get install -y nodejs
 
 ---
 
-### Step 6: Verify Installations
+### 4.6 Verify Installations
 
 ```bash
 node -v 
@@ -121,7 +122,6 @@ node -v
 <img width="495" height="67" alt="Screenshot from 2025-07-20 23-00-53" src="https://github.com/user-attachments/assets/d3c812d8-0c93-4832-a5a1-9baf4ae86936" />
 
 ```bash
-
 npm -v
 ```
 <img width="495" height="67" alt="Screenshot from 2025-07-20 23-06-06" src="https://github.com/user-attachments/assets/1a087526-a18a-4f41-86b3-65234b98f00a" />
@@ -130,7 +130,7 @@ _Should output the installed versions._
 
 ---
 
-### Step 7: Upgrade npm (Recommended)
+### 4.7 Upgrade npm 
 
 ```bash
 sudo npm install -g npm@latest
@@ -140,13 +140,13 @@ sudo npm install -g npm@latest
 
 ---
 
-## Step 8: React Setup Using Vite
+### 4.8 React Setup Using Vite
 
 > Tip: Make sure you're in the directory where you want to create your project.
 
 ---
 
-### Create a New Vite Project
+#### 4.8.1 Create a New Vite Project
 
 ```bash
 npm create vite@latest
@@ -168,12 +168,12 @@ Where `my-app` is your desired project name.
 | Command                          | Description                                  |
 |-----------------------------------|----------------------------------------------|
 | `npm create vite@latest`          | Runs the latest Vite setup tool              |
-|  `<project name>` `eg. my-app`                         | Name of your project directory               |
+| `<project name>` e.g. `my-app`    | Name of your project directory               |
 | `-- --template react`             | Tells Vite to use the React JavaScript template |
 
 ---
 
-### Navigate to Project Directory
+#### 4.8.2 Navigate to Project Directory
 
 ```bash
 cd <project name>
@@ -184,7 +184,7 @@ Replace `<project name>` with the name you chose (e.g., `Demo-reactjs`).
 
 ---
 
-### Install Project Dependencies
+#### 4.8.3 Install Project Dependencies
 
 ```bash
 npm install
@@ -193,7 +193,7 @@ npm install
 
 ---
 
-### Run Development Server (Expose to Network)
+#### 4.8.4 Run Development Server (Expose to Network)
 
 ```bash
 npm run dev 
@@ -211,7 +211,7 @@ Open the Network URL in your browser.
 
 ---
 
-## Troubleshooting
+## 5. Troubleshooting
 
 | Issue                                      | Cause                                 | Solution                                   |
 |---------------------------------------------|---------------------------------------|--------------------------------------------|
@@ -222,7 +222,7 @@ Open the Network URL in your browser.
 
 ---
 
-## Notes
+## 6. Notes
 
 - Port `5173` is used by **Vite** (default).
 - Always prefer **Vite** for new React projects (faster, more modern).
@@ -230,7 +230,20 @@ Open the Network URL in your browser.
 
 ---
 
-## Contact
+## 7. FAQs
+
+**Q. What is ReactJS?**  
+A. ReactJS is a popular JavaScript library used to build fast and interactive user interfaces for web applications.
+
+**Q. How do I expose my development server to the network?**  
+A. Use `npm run dev -- --host` to make your Vite server accessible on your machine's public IP.
+
+**Q. Port 5173 isn't accessible on my cloud VM, what should I do?**  
+A. Ensure port `5173` is open in your VM's firewall/security group settings.
+
+---
+
+## 8. Contact
 
 | Name             | Email                                       |
 |------------------|---------------------------------------------|
@@ -238,9 +251,7 @@ Open the Network URL in your browser.
 
 ---
 
-## References
+## 9. References
 
 - [Reference Video – React.js Vite Setup](https://youtu.be/h2PXfwaI8DA?si=E5u1TBsJF-_aZdQD)
 - [Official React Documentation by GeeksForGeeks](https://www.geeksforgeeks.org/reactjs/react/)
-
----
