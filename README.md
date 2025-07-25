@@ -32,7 +32,7 @@ ReactJS is a JavaScript library used to build user interfaces that update smooth
   - [Verify Installations](#verify-installations)  
   - [Upgrade npm](#upgrade-npm)  
   - [React Setup Using Vite](#react-setup-using-vite)  
-    - [Create a New Vite Project](#create-a-new-vite-project)  
+    - [Create a React App Using Vite](#create-a-react-app-using-vite)  
     - [Navigate to Project Directory](#navigate-to-project-directory)  
     - [Install Project Dependencies](#install-project-dependencies)  
     - [Run Development Server](#run-development-server)  
