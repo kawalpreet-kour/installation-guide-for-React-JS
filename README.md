@@ -219,6 +219,8 @@ Open the Network URL in your browser.
 | App not loading on public IP                | EC2 Firewall blocking port            | Add custom TCP rule for port `5173`        |
 
 ---
+## Notes
+
 
 | Point No. | Description                                                                 |
 |-----------|-----------------------------------------------------------------------------|
