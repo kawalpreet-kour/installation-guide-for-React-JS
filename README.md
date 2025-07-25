@@ -99,6 +99,8 @@ _Downloads NodeSource setup script for Node.js 23.x_
 ```bash
 sudo bash nodesource_setup.sh
 ```
+_Adds the Node.js repository and updates your sources._
+
 <img width="746" height="653" alt="Screenshot from 2025-07-20 22-53-26" src="https://github.com/user-attachments/assets/20a74d47-1f47-4365-b455-275e03186c70" />
 
 ---
@@ -108,6 +110,8 @@ sudo bash nodesource_setup.sh
 ```bash
 sudo apt-get install -y nodejs
 ```
+_Installs Node.js and its package manager, npm._
+
 <img width="858" height="391" alt="Screenshot from 2025-07-20 23-00-03" src="https://github.com/user-attachments/assets/92387b38-898d-455a-a9d7-37057a8ce1c1" />
 
 ---
@@ -117,11 +121,15 @@ sudo apt-get install -y nodejs
 ```bash
 node -v 
 ```
+_Displays installed Node.js version._
+
 <img width="495" height="67" alt="Screenshot from 2025-07-20 23-00-53" src="https://github.com/user-attachments/assets/d3c812d8-0c93-4832-a5a1-9baf4ae86936" />
 
 ```bash
 npm -v
 ```
+_Displays installed npm version._
+
 <img width="495" height="67" alt="Screenshot from 2025-07-20 23-06-06" src="https://github.com/user-attachments/assets/1a087526-a18a-4f41-86b3-65234b98f00a" />
 
 _Should output the installed versions._
@@ -133,6 +141,7 @@ _Should output the installed versions._
 ```bash
 sudo npm install -g npm@latest
 ```
+_Upgrades npm to the latest version globally._
 
 <img width="681" height="94" alt="Screenshot from 2025-07-21 00-36-12" src="https://github.com/user-attachments/assets/7d4c59cd-f18a-457e-b45d-bbfe89dc59a0" />
 
@@ -144,11 +153,13 @@ sudo npm install -g npm@latest
 
 ---
 
-#### Create a New Vite Project
+#### Create a React App Using Vite
 
 ```bash
 npm create vite@latest
 ```
+_Launches Vite wizard to create a React project._
+
 <img width="661" height="589" alt="Screenshot from 2025-07-20 23-19-11" src="https://github.com/user-attachments/assets/6bbe65ff-92e6-43e7-8702-e14ac23becd4" />
 
 You'll be prompted:
@@ -161,6 +172,7 @@ Alternatively, you can run:
 ```bash
 npm create vite@latest my-app -- --template react
 ```
+_Creates a React app named `my-app` using Vite._
 Where `my-app` is your desired project name.
 
 | Command                          | Description                                  |
@@ -176,6 +188,8 @@ Where `my-app` is your desired project name.
 ```bash
 cd <project name>
 ```
+_Changes into the newly created project folder._
+
 <img width="672" height="30" alt="Screenshot from 2025-07-21 00-41-35" src="https://github.com/user-attachments/assets/a7e3a3f5-3e7b-4a7f-ad66-fa89c941e7db" />
 
 Replace `<project name>` with the name you chose (e.g., `Demo-reactjs`).
@@ -187,6 +201,7 @@ Replace `<project name>` with the name you chose (e.g., `Demo-reactjs`).
 ```bash
 npm install
 ```
+_Installs all project-specific packages._
 <img width="626" height="146" alt="Screenshot from 2025-07-21 00-41-46" src="https://github.com/user-attachments/assets/4d0f1147-674e-4d35-aff0-b5de62452841" />
 
 ---
@@ -196,6 +211,7 @@ npm install
 ```bash
 npm run dev 
 ```
+_Starts the local React app on default port 5173._
 <img width="624" height="207" alt="Screenshot from 2025-07-21 00-41-58" src="https://github.com/user-attachments/assets/4019e1b7-c872-4cd7-b5d4-1206f240e788" />
 
 You should see output like:
@@ -240,5 +256,8 @@ Open the Network URL in your browser.
 
 ## References
 
-- [Reference Video – React.js Vite Setup](https://youtu.be/h2PXfwaI8DA?si=E5u1TBsJF-_aZdQD)
-- [Official React Documentation by GeeksForGeeks](https://www.geeksforgeeks.org/reactjs/react/)
+| Title                                | Link                                                                 |
+|--------------------------------------|----------------------------------------------------------------------|
+| React.js Vite Setup (YouTube Video) | [Watch on YouTube](https://youtu.be/h2PXfwaI8DA?si=E5u1TBsJF-_aZdQD) |
+| ReactJS Official Guide (GFG)         | [Read on GeeksForGeeks](https://www.geeksforgeeks.org/reactjs/react/) |
+
