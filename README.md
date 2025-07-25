@@ -4,49 +4,50 @@ A comprehensive, step-by-step guide for installing ReactJS on Debian/Ubuntu-base
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="ReactJS Logo" width="60"/>
 
+---
 ## Author Information
-
-| Created by      | Created on  | Version | Last updated ON | pre Reviewer | 
-|-----------------|------------|---------|-----------------|--------------| 
-| Kawalpreet Kour | 19-07-2025 | V 1.0   | 20-07-2025      | Pritam       | 
+| Last Updated On | Version | Author           | Level           | Reviewer               |
+|-----------------|---------|------------------|-----------------|------------------------|
+| 18-07-2025      | V1.0    | Kawalpreet Kour  | Internal Review | Pritam                 |
+| 25-07-2025      | V1.1    | Kawalpreet Kour  | L0              | Shreya/Sharvani        |
+|                 |         | Kawalpreet Kour  | L1              | Abhishek V             |
+|                 |         | Kawalpreet Kour  | L2              | Abhishek Dubey/Rishabh sharma |
 
 ---
 ## Introduction
 
-ReactJS is a JavaScript library for building interactive user interfaces. It is maintained by Meta and a community of developers. This guide will walk you through the ReactJS setup on Linux using Vite.
+ReactJS is a JavaScript library used to build user interfaces that update smoothly when something changes on a webpage. It helps make websites faster and easier to use.
 
 ---
-
 ## Table of Contents
 
- [Purpose](#purpose)
-
- [Prerequisites](#prerequisites)
- [Step-by-Step Installation Guide](#step-by-step-installation-guide)
-    - [Update Your Packages](#update-your-packages)
-    - [ Install Required Dependencies](#install-required-dependencies)
-    - [ Add Node.js Repository](#add-nodejs-repository)
-    - [ Run the Setup Script](#run-the-setup-script)
-    - [ Install Node.js & npm](#install-nodejs--npm)
-    - [ Verify Installations](#verify-installations)
-    - [Upgrade npm](#upgrade-npm)
-    - [ React Setup Using Vite](#react-setup-using-vite)
-        - [Create a New Vite Project](#create-a-new-vite-project)
-        - [ Navigate to Project Directory](#navigate-to-project-directory)
-        - [Install Project Dependencies](#install-project-dependencies)
-        - [Run Development Server](#run-development-server)
-[Troubleshooting](#troubleshooting)
-[Notes](#notes)
-[Contact](#contact)
-[References](#references)
+- [Purpose](#purpose)  
+- [Prerequisites](#prerequisites)  
+- [Step-by-Step Installation Guide](#step-by-step-installation-guide)  
+  - [Update Your Packages](#update-your-packages)  
+  - [Install Required Dependencies](#install-required-dependencies)  
+  - [Add Node.js Repository](#add-nodejs-repository)  
+  - [Run the Setup Script](#run-the-setup-script)  
+  - [Install Node.js & npm](#install-nodejs--npm)  
+  - [Verify Installations](#verify-installations)  
+  - [Upgrade npm](#upgrade-npm)  
+  - [React Setup Using Vite](#react-setup-using-vite)  
+    - [Create a New Vite Project](#create-a-new-vite-project)  
+    - [Navigate to Project Directory](#navigate-to-project-directory)  
+    - [Install Project Dependencies](#install-project-dependencies)  
+    - [Run Development Server](#run-development-server)  
+- [Troubleshooting](#troubleshooting)  
+- [Notes](#notes)  
+- [Contact](#contact)  
+- [References](#references)  
 
 ---
-
 ## Purpose
 
-To guide users in installing and running ReactJS on their Ubuntu system for development purposes.
+To provide a clear, step-by-step guide for installing ReactJS on Ubuntu and setting up the necessary tools.
 
 ---
+
 ## Prerequisites
 
 | Requirement         | Description                                  |
@@ -93,7 +94,7 @@ _Downloads NodeSource setup script for Node.js 23.x_
 
 ---
 
-### Run the Setup Script
+###  Run the Setup Script
 
 ```bash
 sudo bash nodesource_setup.sh
@@ -219,17 +220,15 @@ Open the Network URL in your browser.
 
 ---
 
-## Notes
+| Point No. | Description                                                                 |
+|-----------|-----------------------------------------------------------------------------|
+| 1         | Port `5173` is used by **Vite** as the default development server port.     |
+| 2         | **Vite** is recommended for new React projects because it is faster and modern. |
+| 3         | If using cloud VMs (e.g., AWS EC2), ensure port `5173` is open in the security group or firewall. |
 
-| Point                          | Description                                                                 |
-|-------------------------------|-----------------------------------------------------------------------------|
-| Port 5173                     | Used by **Vite** as the default development server port.                    |
-| Prefer Vite                   | Vite is faster and more modern — recommended for new React projects.        |
-| Cloud VM Access               | If using a cloud VM (like AWS EC2), make sure to open port `5173` in firewall/security group. |
 
 ---
-
-## Contact
+##  Contact
 
 | Name             | Email                                       |
 |------------------|---------------------------------------------|
